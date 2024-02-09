@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BeFit_Website
+build_property.RootNamespace = BeFit_Website
+build_property.ProjectDir = D:\Projects\Be-Fit-GP-main\BeFit_Website\BeFit_Website\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projects\Be-Fit-GP-main\BeFit_Website\BeFit_Website
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Admin/AdminHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Admin/DeleteFeedbacks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlRmVlZGJhY2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Admin/DeleteUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Admin/ManageFeedbacks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWFuYWdlRmVlZGJhY2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Admin/ManageUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWFuYWdlVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Exercises/ShowExercises.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhlcmNpc2VzXFNob3dFeGVyY2lzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/FoodInfo/SearchForFood.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZEluZm9cU2VhcmNoRm9yRm9vZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/FoodInfo/SpecialFood.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZEluZm9cU3BlY2lhbEZvb2QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Main/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Main/UserFeedbacks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblxVc2VyRmVlZGJhY2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/UserInfo/EditUserData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckluZm9cRWRpdFVzZXJEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/UserInfo/EditUserMacros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckluZm9cRWRpdFVzZXJNYWNyb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/UserInfo/FollowUpMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckluZm9cRm9sbG93VXBNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/UserInfo/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckluZm9cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/UserInfo/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckluZm9cU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Be-Fit-GP-main/BeFit_Website/BeFit_Website/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fff10ghugw

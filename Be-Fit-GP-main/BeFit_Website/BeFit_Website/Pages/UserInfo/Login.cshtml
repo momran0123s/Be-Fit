@@ -1,0 +1,55 @@
+﻿@page
+@model BeFit_Website.Pages.UserInfo.LoginModel
+@{
+    <link href="~/css/login.css" rel="stylesheet" />
+
+	<div class="container" id="container">
+		<div class="form-container sign-in-container">
+			<form method="post"  enctype="multipart/form-data">
+				<h1 class="h1Login">Log in</h1>
+                <div class="social-container">
+					<img src="~/photos/be-fit16.png" width="80" draggable="false" />
+				</div>
+				<input asp-for="user.UserName" placeholder="User Name" />
+				<span asp-validation-for="user.UserName" class="text-danger" style="color:#aa0909"></span>
+				<input asp-for="user.Password" placeholder="Password" type="password" />
+				<span asp-validation-for="user.Password" class="text-danger" style="color:#aa0909"></span>
+				<button class="button1" type="submit">
+					Sign in
+				</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>If this is your first time to join us then please let us know more about you!</p>
+					<a asp-page="/UserInfo/SignUp"><button class="button2"> Sign up</button></a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+}
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+`@if (@Model.Msg != null)
+{
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    if (@Model.Status == "error")
+    {
+        <script type="text/javascript">
+            Swal.fire({
+                icon: 'error',
+                title: '@Model.Msg',
+                showConfirmButton: true
+            })
+        </script>
+    }
+}

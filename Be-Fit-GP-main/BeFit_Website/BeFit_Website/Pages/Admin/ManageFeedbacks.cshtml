@@ -1,0 +1,86 @@
+﻿@page
+@model BeFit_Website.Pages.Admin.ManageFeedbacksModel
+@{
+    <link href="~/css/managefeedbacks.css" rel="stylesheet"/>
+    <link href="~/css/navbar.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/photos/be-fit12.png" width="80" draggable="false" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link btn " asp-page="/Admin/ManageUsers">Manage Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn " asp-page="/Admin/ManageFeedbacks">Manage Feedbacks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn " asp-page="/UserInfo/Login">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="margin-bottom:140px;"></div>
+    <h1 style="margin-bottom: 30px;"> Manage Feedbacks</h1>
+        @foreach (var obj in Model.feedbackList)
+        {
+            if (obj.Approved == false){
+            <div class="feedback-container" style="background:#fae685">
+                <form method="post" class="feedback-form" enctype="multipart/form-data">
+                    <button class="delete" type="submit" asp-page-handler="DeleteFeedback" asp-route-itemid=@obj.Id>&#10008;</button>
+                </form>
+                <form method="post" class="feedback-form" enctype="multipart/form-data">
+                    <button class="restore" type="submit" asp-page-handler="ApproveFeedback" asp-route-itemid=@obj.Id>&#10003;</button>
+                </form>
+                <div class="feedback-wrapper">
+                    <section class="feedback-post">
+                        <form class="feedback-form">
+                            <div class="feedback-content">
+                                <br>
+                                <img src="@obj.FeedbackUser.ProfileUrl" style="border-radius: 50%">
+                                <div class="details">
+                                    <p>@obj.FeedbackUser.UserName</p>
+                                    <p>@obj.TimeCreated</p>
+                                </div>
+                            </div>
+                            <input type="text" asp-for="@obj.Message" readonly="true" style="background:#fae685">
+                        </form>
+                </div>
+            </div>
+            } else {
+            <div class="feedback-container">
+                <form method="post" class="feedback-form" enctype="multipart/form-data">
+                    <button class="delete" type="submit" asp-page-handler="DeleteFeedback" asp-route-itemid=@obj.Id>&#10008;</button>
+                </form>
+                <form method="post" class="feedback-form" enctype="multipart/form-data">
+                    <button class="restore" type="submit" asp-page-handler="ApproveFeedback" asp-route-itemid=@obj.Id>&#10003;</button>
+                </form>
+                <div class="feedback-wrapper">
+                        <section class="feedback-post">
+                        <form class="feedback-form">
+                            <div class="feedback-content">
+                            <br>
+                                <img src="@obj.FeedbackUser.ProfileUrl" style="border-radius: 50%">
+                                <div class="details">
+                                    <p>@obj.FeedbackUser.UserName</p>
+                                    <p>@obj.TimeCreated</p>
+                                </div>
+                            </div>
+                            <input type="text" asp-for="@obj.Message" readonly="true">
+                        </form>
+                </div>
+            </div>
+            }
+
+
+        }
+}
+<script src="~/js/managefeedbacks.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+<script src="~/js/bootstrap.bundle.min.js"></script>

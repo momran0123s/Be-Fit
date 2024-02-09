@@ -1,0 +1,56 @@
+﻿@page
+@model BeFit_Website.Pages.Main.UserFeedbacksModel
+@{
+    <link href="~/css/userfeedbacks.css" rel="stylesheet" />
+    
+    <div class="feedback-container">
+        <div class="feedback-wrapper">
+            <section class="feedback-post" style="margin-top:100px;">
+                <header class="head">Add your Feedback</header>
+                <form method="post" class="feedback-form" id="feedback-form" enctype="multipart/form-data">
+                    <div class="feedback-content">
+                        <img src="@Model.user.ProfileUrl" style="border-radius: 50%">
+                        <div class="feedback-details">
+                            <p>@Model.user.UserName</p>
+                            <p id="datetime"></p>
+                        </div>
+                    </div>
+                    <input id="yourInputFieldId" asp-for="Feedback.Message" placeholder="your feedback is important to us 💖" value="" required>
+                    <button type="submit" asp-page-handler="AddFeedback" id="post-button" class="Post-button">Post</button>
+                </form>
+        </div>
+    </div>
+    @foreach (var obj in Model.feedbackList)
+    {
+        <div class="feedback-container">
+            @{
+                if (obj.UserId.ToString() == HttpContext.Session.GetString("Id").Replace("\"", ""))
+                {
+                    <form method="post" class="feedback-form" enctype="multipart/form-data">
+                        <button class="delete" type="submit" asp-page-handler="DeleteFeedback" asp-route-itemid=@obj.Id>✖️</button>
+                    </form>
+                }
+            }
+            <div class="feedback-wrapper">
+                <section class="feedback-post">
+                    <form class="feedback-form">
+                        <div class="feedback-content">
+                            <img src="@obj.FeedbackUser.ProfileUrl" style="border-radius: 50%">
+                            <div class="feedback-details">
+                                <p>@obj.FeedbackUser.UserName</p>
+                                <p>@obj.TimeCreated</p>
+                            </div>
+                        </div>
+                        <input type="text" asp-for="@obj.Message" readonly="true">
+                    </form>
+            </div>
+        </div>
+                  }
+
+}
+<script src="~/js/userfeedbacks.js"></script>
+@section Scripts{
+    @{
+        <partial name="_NavBar" />
+    }
+}

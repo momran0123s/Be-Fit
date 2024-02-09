@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "In2OSyVSleYTLwa80P1GTVU9mutARC7Z5aS8+eWwmVDeeA+k3EPEGYwtq1AayP8j47BrH4koJ9wIq8673Lo1XA==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Be-Fit-GP-main\\BeFit_Website\\BeFit_Website\\BeFit_Website.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mohamed\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
